@@ -1,0 +1,105 @@
+/* ===========================
+* Encabezado de las categorias *
+============================== */
+.secciones{
+	padding: 0 20px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.secciones h2{
+	margin-bottom: 0;
+	font-size: 54px;
+	line-height: 50px;
+}
+.secciones p{
+	margin: 0;
+	padding: 6px 0;
+	font-size: 22px;
+}
+/* ====================
+* Categorias *
+==================== */
+.container-categorias{
+	max-width: var(--ancho-web);
+	margin: auto;
+}
+.categorias{
+	padding: 0 20px;
+}
+.categorias a, .categorias a:visited{
+	display: block;
+	text-align: center;
+	color: var(--texto);
+	padding: 0 0 50px 0;
+}
+.categorias i{
+	color: var(--texto);
+	padding: 15px;
+	font-size: 50px;
+	background: var(--degradado-1);
+	background: -webkit-linear-gradient(45deg, var(--degradado-1), var(--degradado-2));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: transform .2s;
+}
+.categorias:hover i{
+	transform: scale(1.15);
+}
+.categorias h3{
+	margin: 0;
+	font-size: 25px;
+}
+.categorias p{
+	text-align: left;
+	margin: 2px 0;
+}
+
+/* ====================
+ * Media movil *
+==================== */
+@media only screen and (max-width: 48em) {
+	.secciones{
+		text-align: left;
+	}
+	.secciones h2{
+		font-size: 2.5em;
+	}
+	.container-categorias{
+		padding: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+.container-hero{
+	max-width: var(--ancho-web);
+	margin: auto;
+	overflow: hidden;
+}
+.hero{
+	padding: 60px 20px 15px 20px;
+	margin: auto;
+}
+.hero p,
+.hero h1{
+	color: var(--texto-claro);
+	text-shadow: 0 0 5px #000;
+}
+.hero h1{
+	font-weight: 700;
+	font-size: 3.2em;
+	margin-bottom: 0;
+	line-height: 1em;
+}
+.hero p{
+	font-size: 23px;
+	margin: 10px 0;
+}
+.hero .boton{
+	margin-top: 10px;
+}
+.hero-bg, .banner, .footer{
+	background-color: var(--fondo-banner-derecho-menu);
+	background: linear-gradient(to right, var(--fondo-banner-derecho), var(--fondo-banner-izquierdo)),var(--img-hero-bg);
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+/* ====================
+* Separador / Shape *
+==================== */
+.shape-bottom-hero,
+.shape-top-footer{
+	position: relative;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	z-index: 2;
+}
+.shape-bottom-hero svg,
+.shape-top-footer svg{
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 86px;
+}
+.shape-bottom-hero .shape-fill,
+.shape-top-footer .shape-fill{
+	fill: var(--fondo-separador);
+}
+/* ====================
+ * Media tablet *
+==================== */
+@media only screen and (max-width: 62em) {
+	.hero{
+		padding: 110px 20px 10px;
+	}
+	.hero h1{
+		font-size: 3em;
+	}
+	.shape-bottom-hero svg{
+		height: 66px;
+	}
+}
+/* ====================
+ * Media movil *
+==================== */
+@media only screen and (max-width: 48em) {
+	.hero h1{
+		font-size: 2em;
+		text-align: left;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

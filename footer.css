@@ -1,0 +1,145 @@
+/* ====================
+* Separador / shape *
+==================== */
+.shape-top-footer{
+	bottom: -20px;
+	transform: rotate(180deg);
+}
+/* ====================
+* Footer *
+==================== */
+.footer{
+	background-position: bottom;
+	padding: 80px 30px 40px 30px;
+	margin-top: -65px;
+	color: var(--texto-claro);
+}
+.footer h2{
+	margin: 0;
+}
+.footer ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+}
+.footer ul li{
+	margin-left: 10px;
+}
+.footer ul li a{
+	color: var(--texto-claro);
+}
+.footer ul li:hover a{
+	text-shadow: 0 0 1px #ddd;
+}
+.footer li{
+	display: flex;
+}
+.footer li:before,
+.footer li:nth-last-child(-n+1)::after{
+	content: "\f111";
+	font-family: "Font Awesome 5 Free";
+	width: 12px;
+	align-items: center;
+	display: flex;
+	font-size: 7px;
+	font-weight: bold;
+	color: var(--primary);
+}
+.footer li:nth-last-child(-n+1)::after{
+	position: relative;
+	right: -5px;
+	width: 0px;
+}
+.footer .creador, .footer .peenglero{
+	color: var(--texto-claro);
+	font-weight: bold;
+}
+.creador:hover, .footer .peenglero:hover{
+	color: var(--primary);
+}
+/* ====================
+ * Media movil *
+==================== */
+@media only screen and (max-width: 48em) {
+	.footer ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.footer li::before{
+		align-items: center;
+		display: flex;
+	}
+	.footer li:nth-last-child(-n+1)::after{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

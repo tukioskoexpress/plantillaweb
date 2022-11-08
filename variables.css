@@ -1,0 +1,64 @@
+:root{
+
+/*Fondo*/
+--fondo: #ebebeb; /*color claro*/
+--fondo-banner-derecho: rgba(94, 0, 31, 0.85);
+--fondo-banner-izquierdo: rgba(36, 11, 54, 0.97);
+--fondo-banner-derecho-menu: rgba(94, 0, 31, 1);
+--fondo-banner-izquierdo-menu: rgba(36, 11, 54, 1);
+--img-hero-bg: url(../img/banner.jpg);
+
+/*Fuentes*/
+--fuente-primary: 'Signika', sans-serif;
+--fuente-second: 'Roboto Condensed', sans-serif;
+
+/*Texto*/
+--texto: #000; /*oscuro*/
+--texto-claro: #ebebeb; /*claro*/
+--primary: #cc0d2c;
+
+/*Degradado / Gradient*/
+--degradado-1: var(--fondo-banner-derecho);
+--degradado-2: var(--fondo-banner-izquierdo);
+
+/*Separador / Shape*/
+--fondo-separador: #ebebeb;
+
+/*Display*/
+--d-block:none;
+--d-none: block;
+
+/*Ancho*/
+--ancho-web: 1220px;
+
+}
+
+
+.modo-dark{
+	
+/*body*/
+--fondo: #000; /*oscuro*/
+--texto: #e7e7e7; /*claro*/
+--d-block: block;
+--d-none: none;
+
+/*Separador / Shape*/
+--fondo-separador:#000;
+
+/*Fondos del menu*/
+--fondo-banner-derecho-menu: rgba(0, 0, 0, 1);
+--fondo-banner-izquierdo-menu: rgba(0, 0, 0, 1);
+
+/*Fondos del banner*/
+--fondo-banner-derecho: rgba(0, 0, 0, 0.85);
+--fondo-banner-izquierdo: rgba(0, 0, 0, 0.85);
+
+/*Iconos del menu*/
+--color-icon: var(--primary);
+--icono-sol: var(--primary)!important;
+
+/*Degradado / Gradient*/
+--degradado-1: var(--primary);
+--degradado-2: var(--primary);
+
+}

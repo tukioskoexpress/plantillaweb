@@ -1,0 +1,393 @@
+.navbar{
+	color: #000;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 8;
+	font-size: 20px;
+	max-width: var(--ancho-web);
+	margin: auto;
+}
+.navbar ul{
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.navbar li{
+	list-style: none;
+}
+.navbar a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	color: var(--texto-claro);
+}
+.navbar a:hover{
+	color: #fff;
+}
+.logo img{
+	width: 160px;
+}
+/* ====================
+* Iconos del menu *
+==================== */
+.iconos-menu{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+.btn-search, .modo-oscuro{
+	padding: 20px 0;
+	cursor: pointer;
+	width: 50px;
+	color: var(--texto-claro);
+	text-align: center;
+}
+.btn-search i, .modo-oscuro i{
+	font-size: 17px;
+}
+/* ====================
+* Modo oscuro *
+==================== */
+.icono-sol{
+	display: var(--d-block)!important;
+	color: var(--icono-sol);
+}
+.icono-luna{
+	display: var(--d-none)!important;
+}
+/* =======================
+* Boton cerrar con overlay *
+========================== */
+.btn-cerrar{
+	padding: 30px;
+	position: fixed;
+	z-index: 10;
+	right: 0;
+}
+.btn-cerrar i{
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+.bg-overlay2{
+	display: none;
+	background: #000;
+	opacity: 0.95;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 9;
+}
+/* ====================
+* Input buscador *
+==================== */
+.search__form, #search__form-box, .btn-cerrar{
+	display: none;
+}
+.search__form{
+	position: fixed;
+	top: 50%;
+	width: 100%;
+	z-index: 10;
+}
+#search__form-box{
+	background: transparent;
+	border: 1px solid #fff;
+	border-width: 0 0 2px 0;
+	color: #fff;
+	font-size: 2rem;
+	height: 2.8rem;
+	outline: 0;
+	padding: 1rem;
+	margin: 0 auto;
+}
+/* ====================
+ * MEDIA ORDENADOR *
+==================== */
+@media only screen and (min-width: 62em) {
+
+	.navbar ul{
+		position: relative;
+		justify-content: flex-end;
+		width: 100%;
+	}
+	.navbar input[type="checkbox"], .navbar .fa-bars, .navbar .fa-times{
+		display: none;
+	}
+	.navbar-menu{
+		display: flex;
+		width: 100%;
+	}
+}
+/* ====================
+ * Media tablet *
+==================== */
+@media only screen and (max-width: 62em) {
+
+	.fa-bars, .fa-times{
+		color: var(--texto-claro);
+	}
+	.navbar input,
+	.navbar input:not(:checked) ~ label .fa-times,
+	.navbar input:checked ~ label .fa-bars{
+		display: none;
+	}
+	.navbar{
+		position: fixed;
+		width: 100%;
+		background-color: var(--fondo-banner-derecho-menu);
+		background: linear-gradient(to right, var(--fondo-banner-derecho-menu), var(--fondo-banner-izquierdo-menu));
+	}
+	.navbar a{
+		color: var(--texto);
+	}
+	.navbar a:hover{
+		color: var(--primary);
+	}
+	.navbar .logo{
+		padding: 0;
+		align-self: center;
+	}
+	.logo img{
+		width: 65%;
+	}
+	.navbar-menu{
+		display: flex;
+	}
+	.navbar ul{
+		left: -100%;
+		flex-direction: column;
+		position: absolute;
+	}
+	.navbar input:checked ~ ul{
+		display: block;
+		position: absolute;
+		top: 69px;
+		height: 100vh;
+		background: #ccc;
+		left: 0;
+		transition: left 0.4s ease;
+		padding-bottom: 105px!important;
+		overflow-y: scroll;
+		width: 250px;
+		z-index: 2;
+	}
+	.navbar input:checked ~ .bg-overlay{
+		display: block;
+		background: #000;
+		opacity: 0.95;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		z-index: 1;
+		margin-top: 58px;
+	}
+	.navbar label{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+		font-weight: bold;
+		text-align: center;
+		user-select: none;
+		margin-left: 15px;
+		font-size: 23px;
+		cursor: pointer;
+	}
+	.navbar li{
+		display: block;
+		background: lightgrey;
+		margin: 0;
+		padding: 10px;
+		list-style: none;
+		color: #000; 
+	}
+	.navbar li:hover{
+		filter: brightness(110%);
+	}
+	#search__form-box{
+		width: 90%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

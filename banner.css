@@ -1,0 +1,53 @@
+.banner{
+	padding: 60px;
+	background-position: center center;
+	text-align: center;
+	width: 100%;
+}
+.banner p{
+	margin: 20px 0;
+	font-size: 25px;
+	color: var(--texto-claro);
+}
+.banner h3{
+	font-size: 54px;
+	color: var(--texto-claro);
+	margin-bottom: 0;
+	line-height: 50px;
+}
+.banner h3 i{
+	font-size: 54px;
+	color: var(--color-icon);
+}
+.banner a{
+	margin: 0;
+}
+/* ====================
+ * Media movil *
+==================== */
+@media only screen and (max-width: 48em) {
+	.banner{
+		padding: 60px 30px;
+		text-align: left;
+	}
+	.banner h3 i{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
